@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Puzzle board frame in safe zone -->
+    <path
+        android:fillColor="#1A2238"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2.5"
+        android:pathData="M28,28 h52 a6,6 0 0 1 6,6 v52 a6,6 0 0 1 -6,6 h-52 a6,6 0 0 1 -6,-6 v-52 a6,6 0 0 1 6,-6 z" />
+
+    <!-- Grid division channels -->
+    <path
+        android:strokeColor="#334155"
+        android:strokeWidth="1.5"
+        android:pathData="M46,28 L46,86 M64,28 L64,86 M22,46 L86,46 M22,64 L86,64" />
+
+    <!-- Target socket glowing rings -->
+    <path
+        android:fillColor="#155E75"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="1.5"
+        android:pathData="M34,40 a6,6 0 1 0 0,-0.01 Z" />
+    <path
+        android:fillColor="#581C87"
+        android:strokeColor="#C084FC"
+        android:strokeWidth="1.5"
+        android:pathData="M74,74 a6,6 0 1 0 0,-0.01 Z" />
+
+    <!-- Sliding motion speed trails -->
+    <path
+        android:strokeColor="#67E8F9"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M34,70 L34,46" />
+    <path
+        android:strokeColor="#E879F9"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M52,74 L68,74" />
+
+    <!-- Main Cyan sliding orb -->
+    <path
+        android:pathData="M34,36 a8,8 0 1 0 0.01,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="26"
+                android:startY="28"
+                android:endX="42"
+                android:endY="44"
+                android:type="linear">
+                <item android:color="#E0F2FE" android:offset="0.0" />
+                <item android:color="#06B6D4" android:offset="0.6" />
+                <item android:color="#0891B2" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Magenta sliding orb -->
+    <path
+        android:pathData="M72,70 a7.5,7.5 0 1 0 0.01,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="65"
+                android:startY="63"
+                android:endX="79"
+                android:endY="77"
+                android:type="linear">
+                <item android:color="#FDF4FF" android:offset="0.0" />
+                <item android:color="#C084FC" android:offset="0.5" />
+                <item android:color="#9333EA" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center Pulse Core -->
+    <path
+        android:fillColor="#FBBF24"
+        android:strokeColor="#FDE68A"
+        android:strokeWidth="1"
+        android:pathData="M54,50 l4,4 l-4,4 l-4,-4 z" />
+</vector>
